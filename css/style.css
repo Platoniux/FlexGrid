@@ -1,0 +1,152 @@
+/*common style*/
+body {
+	margin: 0;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+.colorlogo {
+	background: orange;
+	border: 0.5px solid black;
+}
+
+.colormenu {
+	background: red;
+	border: 0.5px solid black;
+}
+
+.colornews {
+	background: coral;
+	color: white;
+	border: 0.5px solid black;
+}
+
+.colorlist {
+	background: orange;
+	border: 0.5px solid black;
+}
+
+.colornav {
+	background: black;
+	color: white;
+	border: 0.5px solid black;
+}
+
+.colorfooter {
+	background: orange;
+	border: 0.5px solid black;
+}
+
+/* text */
+.text {
+	display: inline-block;
+	text-transform: uppercase;
+	margin: auto;
+}
+
+/*end of common style*/
+
+
+/*____________FLEX____________*/
+/* general container */
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.nav {
+	display: flex;
+	flex-grow: 1;
+}
+
+/*end of general container*/
+
+
+/*firstcont*/
+
+.firstcont {
+	display: flex;
+	width: 100%;
+	height: 100px;
+}
+
+.logo {
+	display: flex;
+	width: 100px;
+}
+
+.menu {
+	display: flex;
+	height: 100px;
+	flex-grow: 1;
+}
+
+/*end of firstcont*/
+
+
+/*secondcont*/
+.secondcont {
+	display: flex;
+	width: calc(100px + 65%);
+	flex-wrap: wrap;
+}
+
+.news {
+	display: flex;
+	width: 100px;
+	height: 300px;
+	text-align: center;
+}
+
+.list {
+	display: flex;
+	height: 300px;
+	width: calc(100% - 100px);
+}
+
+.footer {
+	display: flex;
+	flex-grow: 1;
+	height: 150px;
+}
+
+/*end of secondcont*/
+
+/*______________ GRID ______________*/
+
+.gridcontainer {
+	display: grid;
+	grid-template-rows: 100px 300px 150px;
+	grid-template-columns: 100px 65% 1fr; 
+}
+
+.gridlogo {
+	display: flex;
+}
+
+.gridmenu {
+	display: flex;
+	grid-column: span 2;
+}
+
+.gridnews {
+	display: flex;
+	text-align: center;
+}
+
+.gridnav {
+	display: flex;
+	grid-row: span 2;
+}
+
+.gridfooter {
+	display: flex;
+	grid-column: span 2;
+}
+
+.gridlist {
+	display: flex;
+}
