@@ -7,36 +7,39 @@ div {
 	box-sizing: border-box;
 }
 
-.colorlogo {
-	background: orange;
-	border: 0.5px solid black;
-}
-
 .colormenu {
 	background: red;
-	border: 0.5px solid black;
 }
 
 .colornews {
 	background: coral;
 	color: white;
-	border: 0.5px solid black;
-}
-
-.colorlist {
-	background: orange;
-	border: 0.5px solid black;
 }
 
 .colornav {
 	background: black;
 	color: white;
+}
+
+.colorlogo,
+.colorlist,
+.colorfooter {
+	background: orange;
+}
+
+.colorlogo,
+.colormenu,
+.colornews,
+.colorlist,
+.colornav,
+.colorfooter {
 	border: 0.5px solid black;
 }
 
-.colorfooter {
-	background: orange;
-	border: 0.5px solid black;
+/*flex for align text*/
+
+.alignflex {
+	display: flex;
 }
 
 /* text */
@@ -50,15 +53,21 @@ div {
 
 
 /*____________FLEX____________*/
-/* general container */
+
+/*flex containers*/
+
+.container,
+.firstcont,
+.secondcont {
+	display: flex;
+}
+
 
 .container {
-	display: flex;
 	flex-wrap: wrap;
 }
 
 .nav {
-	display: flex;
 	flex-grow: 1;
 }
 
@@ -68,18 +77,15 @@ div {
 /*firstcont*/
 
 .firstcont {
-	display: flex;
 	width: 100%;
 	height: 100px;
 }
 
 .logo {
-	display: flex;
 	width: 100px;
 }
 
 .menu {
-	display: flex;
 	height: 100px;
 	flex-grow: 1;
 }
@@ -89,32 +95,29 @@ div {
 
 /*secondcont*/
 .secondcont {
-	display: flex;
 	flex-wrap: wrap;
 	flex-grow: 2;
-
 }
 
 .news {
-	display: flex;
 	width: 100px;
 	height: 300px;
 	text-align: center;
 }
 
 .list {
-	display: flex;
 	height: 300px;
 	width: calc(100% - 100px);
 }
 
 .footer {
-	display: flex;
 	height: 150px;
 	flex-grow: 2;
 }
 
 /*end of secondcont*/
+
+
 
 /*______________ GRID ______________*/
 
@@ -124,30 +127,20 @@ div {
 	grid-template-columns: 100px 26fr 14fr; 
 }
 
-.gridlogo {
-	display: flex;
-}
+/*some grid items*/
 
 .gridmenu {
-	display: flex;
 	grid-column: span 2;
 }
 
 .gridnews {
-	display: flex;
 	text-align: center;
 }
 
 .gridnav {
-	display: flex;
 	grid-row: span 2;
 }
 
 .gridfooter {
-	display: flex;
 	grid-column: span 2;
-}
-
-.gridlist {
-	display: flex;
 }
