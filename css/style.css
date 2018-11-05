@@ -90,8 +90,9 @@ div {
 /*secondcont*/
 .secondcont {
 	display: flex;
-	width: calc(100px + 65%);
 	flex-wrap: wrap;
+	flex-grow: 2;
+
 }
 
 .news {
@@ -109,8 +110,8 @@ div {
 
 .footer {
 	display: flex;
-	flex-grow: 1;
 	height: 150px;
+	flex-grow: 2;
 }
 
 /*end of secondcont*/
@@ -120,7 +121,7 @@ div {
 .gridcontainer {
 	display: grid;
 	grid-template-rows: 100px 300px 150px;
-	grid-template-columns: 100px 65% 1fr; 
+	grid-template-columns: 100px 26fr 14fr; 
 }
 
 .gridlogo {
