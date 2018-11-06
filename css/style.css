@@ -27,19 +27,11 @@ div {
 	background: orange;
 }
 
-.colorlogo,
-.colormenu,
-.colornews,
-.colorlist,
-.colornav,
-.colorfooter {
-	border: 0.5px solid black;
-}
-
-/*flex for align text*/
+/*flex for align text & make borders*/
 
 .alignflex {
 	display: flex;
+	border: 0.5px solid black;
 }
 
 /* text */
@@ -86,7 +78,6 @@ div {
 }
 
 .menu {
-	height: 100px;
 	flex-grow: 1;
 }
 
@@ -112,11 +103,10 @@ div {
 
 .footer {
 	height: 150px;
-	flex-grow: 2;
+	flex-grow: 1;
 }
 
 /*end of secondcont*/
-
 
 
 /*______________ GRID ______________*/
