@@ -1,9 +1,6 @@
 /*common style*/
-body {
+* {
 	margin: 0;
-}
-
-div {
 	box-sizing: border-box;
 }
 
@@ -47,49 +44,40 @@ div {
 /*____________FLEX____________*/
 
 /*flex containers*/
-
-.container,
-.firstcont,
-.secondcont {
+.header,
+.main,
+.content {
 	display: flex;
 }
 
+/*end of flex containers*/
 
-.container {
-	flex-wrap: wrap;
-}
-
-.nav {
-	flex-grow: 1;
-}
-
-/*end of general container*/
-
-
-/*firstcont*/
-
-.firstcont {
-	width: 100%;
-	height: 100px;
-}
+/*header*/
 
 .logo {
 	width: 100px;
+	height: 100px;
 }
 
 .menu {
 	flex-grow: 1;
 }
+/*end of header*/
 
-/*end of firstcont*/
-
-
-/*secondcont*/
-.secondcont {
-	flex-wrap: wrap;
-	flex-grow: 2;
+/*main*/
+.nav {
+	height: 450px;
+	flex-basis: 0;
+	flex-grow: 35;
 }
 
+
+/*content*/
+.content {
+	flex-basis: 100px;
+	flex-grow: 65;
+	flex-wrap: wrap;
+}
 .news {
 	width: 100px;
 	height: 300px;
@@ -98,15 +86,16 @@ div {
 
 .list {
 	height: 300px;
-	width: calc(100% - 100px);
+	flex-grow: 1;
 }
 
 .footer {
 	height: 150px;
-	flex-grow: 1;
+	width: 100%;
 }
+/*end of content*/
 
-/*end of secondcont*/
+/*end of main*/
 
 
 /*______________ GRID ______________*/
@@ -114,7 +103,7 @@ div {
 .gridcontainer {
 	display: grid;
 	grid-template-rows: 100px 300px 150px;
-	grid-template-columns: 100px 26fr 14fr; 
+	grid-template-columns: 100px 13fr 7fr; 
 }
 
 /*some grid items*/
